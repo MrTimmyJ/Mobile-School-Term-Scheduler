@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.CourseDetails">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Name" />
+
+                <EditText
+                    android:id="@+id/courseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="math" />
+                <TextView
+                    android:layout_marginLeft="285dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Mentor Name"/>
+                <EditText
+                    android:id="@+id/courseMentorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="alberto"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Start Date"/>
+                <EditText
+                    android:id="@+id/courseStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:hint="09/15/2023"/>
+                <TextView
+                    android:layout_marginLeft="150dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Mentor Phone Number"/>
+                <EditText
+                    android:id="@+id/courseMentorPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="555-555-5555"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course End Date"/>
+                <EditText
+                    android:id="@+id/courseEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:hint="11/15/2023"/>
+                <TextView
+                    android:layout_marginLeft="175dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Mentor Email"/>
+                <EditText
+                    android:id="@+id/courseMentorEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="email@email.com"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Status: "/>
+                <TextView
+                    android:id="@+id/courseStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Status"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/courseStatusSpinner"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="373dp" />
+
+                <Spinner
+                    android:id="@+id/courseSpinner"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="373dp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saveCourse"
+                    android:text="Save"/>
+
+                <TextView
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Note" />
+
+                <EditText
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/courseNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter New Note" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/assessmentRecyclerView"
+                android:layout_width="375dp"
+                android:layout_height="253dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/saveCourse"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="301dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
