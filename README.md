@@ -76,6 +76,17 @@ Push Notifications:
 
 ![schooltermbanner](https://github.com/user-attachments/assets/31a74cac-0325-4f72-b892-4f59576ea7c0)
 
+🧰 Technologies Used
+
+    ☕ Java (SDK 11+)
+
+    📱 Android Studio
+
+    🗃️ SQLite via Room Persistence Library
+
+    📐 XML for UI Layouts
+
+    🔔 Android Notifications API
 
 🚀 Getting Started
 
