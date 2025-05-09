@@ -44,8 +44,14 @@ Users can add, update, and delete information while receiving timely notificatio
 com.timj.c196/ <br>
 ├── UI/ <br>
 │   ├── MainActivity.java &nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp; Launch activity and navigation <br>
-│   ├── TermList.java &nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp; Displays a list of all terms <br>
+│   ├── TermList.java &nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp; Displays list of all terms <br>
 │   ├── TermDetails.java &nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp; Edits a specific term and shows related courses <br>
+│   ├── CourseDetails.java &nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp; Edits a specific course and shows related assessments <br>
+│   ├── AssessmentDetails.java &nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp; Edits a specific assessment <br>
+│   ├── TermAdapter.java &nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp; Adapter for displaying the term list <br>
+│   ├── CourseAdapter.java &nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp; Adapter for displaying courses <br>
+│   ├── AssessmentAdapter.java &nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp; Adapter for displaying assessments <br>
+│   └── MyReceiver.java &nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp; Handles scheduled notifications <br>
 ├── Database/ <br>
 │   ├── C196Database.java &nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp; Room database configuration <br>
 │   ├── C196Repository.java &nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp; Repository for handling DAO operations <br>
