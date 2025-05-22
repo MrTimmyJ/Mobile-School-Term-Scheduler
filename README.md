@@ -6,10 +6,10 @@ Date: July 2023 to August 2023
 
 ## Overview
 
-A mobile Android app built to help students organize and manage their academic terms, courses, and assessments.
+&nbsp;&nbsp;&nbsp;&nbsp;A mobile Android app built to help students organize and manage their academic terms, courses, and assessments.
 Featuring data persistence through SQLite, push notifications for deadlines, and a structured navigation system for seamless user interaction.
 
-The School Term Scheduler is an Android application that empowers students to plan their academic schedules efficiently.
+&nbsp;&nbsp;&nbsp;&nbsp;The School Term Scheduler is an Android application that empowers students to plan their academic schedules efficiently.
 The app organizes data into a hierarchy: Terms → Courses → Assessments.
 Users can add, update, and delete information while receiving timely notifications about upcoming deadlines.
 
@@ -98,7 +98,7 @@ Push Notifications:
 
     1. Clone the repo:
 
-      git clone https://github.com/yourusername/school-term-scheduler.git
+      git clone https://github.com/MrTimmyJ/school-term-scheduler.git
       cd school-term-scheduler
 
     2. Open with Android Studio
@@ -121,4 +121,4 @@ Push Notifications:
 
 🪪 License
 
-This project is open source and available under the [MIT License](https://opensource.org/license/mit).
+This open-source project is available under the [MIT License](https://opensource.org/license/mit).
